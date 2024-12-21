@@ -1,0 +1,83 @@
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Project-specific
+.DS_Store
+Thumbs.db
+
+# OS generated files
+*.swp
+*~
+.idea/
+.vscode/
+*.bak
+*.tmp
+*.orig
+*.old
+
+# Node.js / Nuxt.js
+node_modules/
+.nuxt/
+.output/
+dist/
+
+# Dependency directories
+frontend/node_modules/
+frontend/.nuxt/
+frontend/.output/
+frontend/dist/
+
+# Nuxt Build Artifacts
+frontend/.cache/
+frontend/.nuxt/
+
+# Environment files
+frontend/.env
+backend/.env
+.env
+
+# Spring Boot
+target/
+*.iml
+*.class
+
+# IDE Directories
+/.idea/
+/*.iml
+/*.ipr
+/*.iws
+
+# MacOS files
+*.DS_Store
+
+# Eclipse files
+/.project
+/.settings
+/.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# gradle files
+task-manager-service/.gradle
+task-manager-service/build
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.*.yml
+.dockerignore
+
+# PostgreSQL Data (Docker Volumes)
+postgres_data/
+*.sql
