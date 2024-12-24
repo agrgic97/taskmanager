@@ -20,8 +20,8 @@ RUN npm run build
 FROM node:18-slim
 
 # Copy the build files to Nodw
-WORKDIR /frontend
-COPY --from=build /frontend/.output ./
+WORKDIR /task-manager-frontend
+COPY --from=build /task-manager-frontend/.output ./
 
 # Expose the application port
 EXPOSE 3000
