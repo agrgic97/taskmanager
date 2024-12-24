@@ -2,11 +2,11 @@
 FROM node:18 as build
 
 # Set working directory
-WORKDIR /frontend
+WORKDIR /task-manager-frontent
 
 # Copy package files and install dependencies
-COPY ./package.json /frontend/
-COPY ./package-lock.json /frontend/
+COPY ./package.json /task-manager-frontend/
+COPY ./package-lock.json /task-manager-frontend/
 
 RUN npm install
 
@@ -26,4 +26,4 @@ COPY --from=build /frontend/.output ./
 # Expose the application port
 EXPOSE 3000
 
-CMD ["node","/frontend/server/index.mjs"]
+CMD ["node","/task-manager-frontend/server/index.mjs"]

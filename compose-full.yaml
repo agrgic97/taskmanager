@@ -18,7 +18,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./task-manager-frontend
       dockerfile: Dockerfile
     container_name: taskmanager-frontend
     ports:
