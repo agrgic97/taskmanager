@@ -81,3 +81,4 @@ docker-compose.override.*.yml
 # PostgreSQL Data (Docker Volumes)
 postgres_data/
 *.sql
+!/task-manager-frontend/nuxt.run.xml
