@@ -16,7 +16,7 @@ import java.util.Map;
 @Component
 public class JwtService {
     private static final String SECRET = "ZjAyNzkxYTgtOWJhZS00NzQ1LWE5MzEtMTkzYmE3M2ZhNDE4ZjAyNzkxYTgtOWJhjzfjdsw45ev7z7f7lkj9oj309jjoo989j9090HHyl9jjhttuUuJJ9644Db";
-    private final long EXPIRATION_TIME = 900_000; // 15 minutes
+    private final long EXPIRATION_TIME = 1000 * 60 * 60; // 1 hour
 
     public long getExpirationTime() {
         return EXPIRATION_TIME;

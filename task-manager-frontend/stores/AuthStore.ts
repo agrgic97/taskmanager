@@ -25,7 +25,7 @@ const useAuthStore = defineStore('authStore', () => {
     }
   }
 
-  const logout = async ():Promise<void> => {
+  const logout = () => {
     nuxtStorage.localStorage.removeItem('token')
   }
 
